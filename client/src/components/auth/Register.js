@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
-import classnames from "classnames";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import TextFieldGroup from "../common/TextFieldGroup";
@@ -70,7 +69,6 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.name}
                 />
-
                 <TextFieldGroup
                   placeholder="Email"
                   name="email"
@@ -80,7 +78,6 @@ class Register extends Component {
                   error={errors.email}
                   info="This site uses Gravatar so if you want a profile image, use a Gravatar email"
                 />
-
                 <TextFieldGroup
                   placeholder="Password"
                   name="password"
@@ -89,7 +86,6 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.password}
                 />
-
                 <TextFieldGroup
                   placeholder="Confirm Password"
                   name="password2"
@@ -98,7 +94,6 @@ class Register extends Component {
                   onChange={this.onChange}
                   error={errors.password2}
                 />
-
                 <input type="submit" className="btn btn-info btn-block mt-4" />
               </form>
             </div>
